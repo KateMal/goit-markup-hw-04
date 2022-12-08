@@ -139,6 +139,12 @@ body {
   padding-top: 200px;
 
   padding-bottom: 200px;
+  background-image: url(../img/hw4/heroOverlay.png), url(../img/hw4/herobg.jpg);
+
+  /* height: 600px; */
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .hero-button {
   background-color: #2196f3;
@@ -171,6 +177,32 @@ body {
 .benefits-list-item {
   list-style: none;
 }
+
+.benefits-list-item::before {
+  display: block;
+  content: "";
+  height: 120px;
+  background-color: #f5f4fa;
+  background-image: url(../img/hw4/Vector1.svg);
+  /* background-size: contain; */
+  background-repeat: no-repeat;
+  background-position: center;
+
+  /* height: 70px; */
+  /* width: 66.95px; */
+}
+
+.icon-clock::before {
+  background-image: url(../img/hw4/Vector2.svg);
+}
+
+.icon-planning::before {
+  background-image: url(../img/hw4/Vector3.svg);
+}
+.icon-technology::before {
+  background-image: url(../img/hw4/Vector4.svg);
+}
+
 .benefits-list-item-tittle {
   color: #212121;
   font-size: 14px;
@@ -243,6 +275,38 @@ body {
   border-radius: 0px 0px 4px 4px;
   padding: 30px;
   text-align: center;
+}
+/* ==================regular-customers */
+.regular-customers {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.regular-customers-title {
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: #212121;
+}
+.regular-customers-item {
+  list-style: none;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+}
+.regular-customers-item:hover,
+.regular-customers-item:focus {
+  color: #ffffff;
+  border-color: #2196f3;
+}
+.regular-customers-title-list {
+  display: flex;
+  gap: 30px;
+}
+
+.regular-customers-card-item {
+  fill: #afb1b8;
 }
 
 /* ====================== footer */
