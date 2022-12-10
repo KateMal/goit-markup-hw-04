@@ -19,6 +19,12 @@ ul {
   padding: 0;
 }
 
+.thumb > img {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
 svg {
   fill: currentColor;
 }
