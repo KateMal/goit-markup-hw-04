@@ -154,7 +154,12 @@ body {
   padding-top: 200px;
 
   padding-bottom: 200px;
-  background-image: url(../img/hw4/heroOverlay.png), url(../img/hw4/herobg.jpg);
+  background-image: url(../img/hw4/herobg.jpg),
+    linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4) 0%,
+      rgba(47, 48, 58, 0.4) 100%
+    );
 
   /* height: 600px; */
   max-width: 1600px;
@@ -495,8 +500,12 @@ body {
   letter-spacing: 0.03em;
   color: #757575;
 }
-
-.example-list-item:hover {
+.example-list-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+.example-list-link:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
